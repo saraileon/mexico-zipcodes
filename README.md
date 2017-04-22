@@ -39,4 +39,4 @@ If you are in a Linux/Unix shell
 - `nodemon server.js --port=5899`
 - Open [localhost:5899](http://localhost:5899)
 
-Service: [localhost:5899/zipcode/3000](http://localhost:5899/zipcode/3000)
+Service: [localhost:5899/zipcode/03100](http://localhost:5899/zipcode/03100)
