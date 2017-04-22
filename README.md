@@ -1,7 +1,7 @@
 # Mexico Zipcodes
 Mexico zipcodes micro service with NodeJS & MongoDB using HapiJS framework.
 
-Data taken from the México postal service.
+Data taken from the Mexico postal service (SEPOMEX: [http://www.sepomex.gob.mx/lservicios/servicios/CodigoPostal_Exportar.aspx](http://www.sepomex.gob.mx/lservicios/servicios/CodigoPostal_Exportar.aspx)).
 
 Total data: 144,826
 
