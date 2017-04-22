@@ -4,6 +4,7 @@ Mexico zipcodes micro service with NodeJS & MongoDB using HapiJS framework.
 Data taken from the México postal service.
 
 Total data: 144,826
+
 Unique zipcodes: 32,147
 
 ## Setup
@@ -32,7 +33,7 @@ From shell run once:
 If you are in a Linux/Unix shell
 
 - `cd data`
-- `for filename in *; do mongoimport -d mexico_zipcodes1 -c zipcodes --type json --file $filename;  done`
+- `for filename in *; do mongoimport -d mexico_zipcodes -c zipcodes --type json --file $filename;  done`
 
 ### 4. Run the service
 - `cd ..`
