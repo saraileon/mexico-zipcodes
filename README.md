@@ -7,9 +7,9 @@ Total data: 144,826
 
 Unique zipcodes: 32,147
 
-You can find and already hosted version of the api here: [http://damp-shelf-84192.herokuapp.com/](http://damp-shelf-84192.herokuapp.com/)
+You can find and already hosted version of the api here: [http://mexico-zipcodes.herokuapp.com/](http://mexico-zipcodes.herokuapp.com/)
 
-[http://damp-shelf-84192.herokuapp.com/zipcode/03100](http://damp-shelf-84192.herokuapp.com/zipcode/03100)
+[http://mexico-zipcodes.herokuapp.com/zipcode/03100](http://mexico-zipcodes.herokuapp.com/zipcode/03100)
 
 ## Setup
 Use instructions below to setup the repo and run the project:
