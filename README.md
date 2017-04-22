@@ -28,14 +28,19 @@ From shell run once:
 
 - `DB=db_index node server.js`
 
-### 3. Populate database
+### 3. Install node_modules
+
+- `npm install OR yarn`
+
+### 4. Populate database
 
 If you are in a Linux/Unix shell
 
 - `cd data`
 - `for filename in *; do mongoimport -d mexico_zipcodes -c zipcodes --type json --file $filename;  done`
 
-### 4. Run the service
+### 5. Run the service
+
 - `cd ..`
 - `nodemon server.js --port=5899`
 - Open [localhost:5899](http://localhost:5899)
