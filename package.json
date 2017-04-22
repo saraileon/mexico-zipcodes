@@ -2,6 +2,12 @@
   "name": "mexico-zipcodes",
   "description": "México Zipcodes",
   "version": "0.0.2",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saraileon/mexico-zipcodes.git"
+  },
+  "author": "Sarai Leon",
+  "license": "MIT",
   "main": "server.js",
   "dependencies": {
     "boom": "^2.6.1",
