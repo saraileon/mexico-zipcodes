@@ -15,14 +15,45 @@ exports.index = {
 exports.getZipcode = {
   handler: function(req, res) {
     const zipcode = String(req.params.zipcode);
-    const page = String(req.query.page);
-    const limit = String(req.query.limit);
+    let page      = req.query.page;
+    let limit     = req.query.limit;
+    let data      = {};
+    let total     = 0;
 
+    if(typeof page !== 'undefined' && typeof limit !== 'undefined'){
+      page  = parseInt(page);
+      limit = parseInt(limit);
 
-    Zipcode.find({ $or: [{ 'zipcode': zipcode }, { 'colony': zipcode }] }).exec(function(err,data){
-      if (err) { return res(Boom.badImplementation(err)) }
-      return res(data);
-    });
+      Zipcode.count({ $or: [{ 'zipcode': zipcode }, { 'colony': zipcode }] }).exec()
+      .catch((e) => {
+        return res(Boom.badImplementation(err));
+      })
+      .then((count) => {
+        total = count;
+      })
+      .then(() => {
+        Zipcode.find({ $or: [{ 'zipcode': zipcode }, { 'colony': zipcode }] }).skip(page-1).limit(limit).exec()
+        .catch((e) => {
+          return res(Boom.badImplementation(err));
+        })
+        .then((rows) => {
+          data.data  = rows;
+          data.total = total;
+          data.limit = limit;
+          data.page  = page;
+          data.pages = Math.ceil(total/limit);
+        })
+        .then(() => {
+          return res(data);
+        });
+      });
+
+    }else{
+      Zipcode.find({ $or: [{ 'zipcode': zipcode }, { 'colony': zipcode }] }).exec(function(err,data){
+        if (err) { return res(Boom.badImplementation(err)) }
+        return res(data);
+      });
+    }
   }
 };
 

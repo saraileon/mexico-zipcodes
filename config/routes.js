@@ -6,7 +6,7 @@ var Zipcode      = require('./../controller/zipcode');
 var Municipality = require('./../controller/municipality');
 var State        = require('./../controller/state');
 var Colony       = require('./../controller/colony');
-var Zone         = require('./../controller/Zone');
+var Zone         = require('./../controller/zone');
 
 // API Server Endpoints
 exports.endpoints = [

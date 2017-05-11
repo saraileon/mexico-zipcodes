@@ -11,39 +11,81 @@ You can find and already hosted version of the api here: [http://mexico-zipcodes
 
 [http://mexico-zipcodes.herokuapp.com/zipcode/03100](http://mexico-zipcodes.herokuapp.com/zipcode/03100)
 
-## Setup
+## Search Types
+
+### By Zipcode
+
+- `/zipcode/{ZIPCODE}`
+  [http://mexico-zipcodes.herokuapp.com/zipcode/03100](http://mexico-zipcodes.herokuapp.com/zipcode/03100)
+
+### By State
+
+- `/state/{STATE}`
+  [http://mexico-zipcodes.herokuapp.com/state/Tamaulipas](http://mexico-zipcodes.herokuapp.com/state/Tamaulipas)
+
+### By Colony
+
+- `/colony/{COLONY}`
+  [http://mexico-zipcodes.herokuapp.com/colony/Centro](http://mexico-zipcodes.herokuapp.com/colony/Centro)
+
+### By Municipality
+
+- `/municipality/{MUNICIPALITY}`
+  [http://mexico-zipcodes.herokuapp.com/municipality/Benito Juárez](http://mexico-zipcodes.herokuapp.com/municipality/Benito Juárez)
+
+### By Zone Type
+
+- `/zone/{ZONE_TYPE}`
+  [http://mexico-zipcodes.herokuapp.com/zone/Urbano](http://mexico-zipcodes.herokuapp.com/zone/Urbano)
+
+All search terms have case-insensitive and RegExp search (not accent insensitive, though)
+
+## Pagination
+
+Add at the end of the url:
+
+- `?page={PAGE}&limit={LIMIT}`
+  [http://mexico-zipcodes.herokuapp.com/zone/Urbano?page=1&limit=5](http://mexico-zipcodes.herokuapp.com/zone/Urbano?page=1&limit=5)
+
+  You'll get back the following additional params:
+  - total (total of documents per the search term)
+  - limit (limit of data per page)
+  - page (current page)
+  - pages (total of pages per the search terms)
+
+### Setup
 Use instructions below to setup the repo and run the project:
 
-### Dependencies
+#### Dependencies
 The following dependencies are required to setup and run this project locally:
 
 - NodeJS
 - NPM/Yarn
 - MongoDB
 
-### 1. Clone The project
+#### 1. Clone The project
 
 - `git clone https://github.com/saraileon/mexico-zipcodes.git`
 - `cd mexico-zipcodes`
 
-### 2. Setup database indexes
+#### 2. Setup database indexes
 
 From shell run once:
 
 - `DB=db_index node server.js`
 
-### 3. Install node_modules
+#### 3. Install node_modules
 
 - `npm install OR yarn`
 
-### 4. Populate database
+#### 4. Populate database
 
 If you are in a Linux/Unix shell
 
 - `cd data`
 - `for filename in *; do mongoimport -d mexico_zipcodes -c zipcodes --type json --file $filename;  done`
 
-### 5. Run the service
+#### 5. Run the service
 
 - `cd ..`
 - `nodemon server.js --port=5899`
