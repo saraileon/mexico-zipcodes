@@ -10,7 +10,7 @@ module.exports = {
   database: {
   	host: '127.0.0.1',
     port: 27017,
-    db: 'mexico_zipcodes1',
+    db: 'mexico_zipcodes',
     username: '',
     password: '',
     url : 'mongodb://<user>:<password>@<url>'
