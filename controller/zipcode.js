@@ -11,16 +11,19 @@ exports.index = {
   }
 };
 
+
 exports.getZipcode = {
   handler: function(req, res) {
     const zipcode = String(req.params.zipcode);
+    const page = String(req.query.page);
+    const limit = String(req.query.limit);
 
-    Zipcode.find({ $or: [{ 'zipcode': zipcode }, { 'colony': zipcode }] }, function(err, data) {
-      if (!err) {
-        return res(data);
-      }
-      return res(Boom.badImplementation(err)); // 500 error
+
+    Zipcode.find({ $or: [{ 'zipcode': zipcode }, { 'colony': zipcode }] }).exec(function(err,data){
+      if (err) { return res(Boom.badImplementation(err)) }
+      return res(data);
     });
   }
 };
+
 
