@@ -49,7 +49,7 @@ exports.getMunicipality = {
       });
 
     }else{
-      Zipcode.find({ 'municipality': new RegExp(municipality, 'i') }).collation({locale: 'es', strength: 3}).exec(function(err,data){
+      Zipcode.find({ 'municipality': new RegExp(municipality, 'i') }).exec(function(err,data){
         if (err) { return res(Boom.badImplementation(err)) }
         return res(data);
       });

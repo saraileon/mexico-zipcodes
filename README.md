@@ -47,7 +47,7 @@ Add at the end of the url:
 - `?page={PAGE}&limit={LIMIT}`
   [http://mexico-zipcodes.herokuapp.com/zone/Urbano?page=1&limit=5](http://mexico-zipcodes.herokuapp.com/zone/Urbano?page=1&limit=5)
 
-  You'll get back the following additional params:
+  You'll get back the following additional arguments:
   - total (total of documents per the search term)
   - limit (limit of data per page)
   - page (current page)
