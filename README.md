@@ -53,39 +53,41 @@ Add at the end of the url:
   - page (current page)
   - pages (total of pages per the search terms)
 
-### Setup
+---
+
+## Setup
 Use instructions below to setup the repo and run the project:
 
-#### Dependencies
+### Dependencies
 The following dependencies are required to setup and run this project locally:
 
 - NodeJS
 - NPM/Yarn
 - MongoDB
 
-#### 1. Clone The project
+### 1. Clone The project
 
 - `git clone https://github.com/saraileon/mexico-zipcodes.git`
 - `cd mexico-zipcodes`
 
-#### 2. Setup database indexes
+### 2. Setup database indexes
 
 From shell run once:
 
 - `DB=db_index node server.js`
 
-#### 3. Install node_modules
+### 3. Install node_modules
 
 - `npm install OR yarn`
 
-#### 4. Populate database
+### 4. Populate database
 
 If you are in a Linux/Unix shell
 
 - `cd data`
 - `for filename in *; do mongoimport -d mexico_zipcodes -c zipcodes --type json --file $filename;  done`
 
-#### 5. Run the service
+### 5. Run the service
 
 - `cd ..`
 - `nodemon server.js --port=5899`
