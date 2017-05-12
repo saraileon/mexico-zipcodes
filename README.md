@@ -1,3 +1,9 @@
+<!--
+  Title: Mexico Zipcodes
+  Description: A curated list of amazingly awesome regex resources.
+  Author: aloisdg
+  -->
+
 # Mexico Zipcodes
 Mexico zipcodes micro service with NodeJS & MongoDB using HapiJS framework.
 
@@ -90,7 +96,7 @@ If you are in a Linux/Unix shell
 ### 5. Run the service
 
 - `cd ..`
-- `nodemon server.js --port=5899`
+- `node server.js --port=5899`
 - Open [localhost:5899](http://localhost:5899)
 
 Service: [localhost:5899/zipcode/03100](http://localhost:5899/zipcode/03100)
