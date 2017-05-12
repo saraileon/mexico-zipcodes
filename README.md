@@ -31,7 +31,7 @@ You can find and already hosted version of the api here: [http://mexico-zipcodes
 ### By Municipality
 
 - `/municipality/{MUNICIPALITY}`
-  [http://mexico-zipcodes.herokuapp.com/municipality/Benito Juárez](http://mexico-zipcodes.herokuapp.com/municipality/Benito Juárez)
+  [http://mexico-zipcodes.herokuapp.com/municipality/Benito%20Juárez](http://mexico-zipcodes.herokuapp.com/municipality/Benito%20Juárez)
 
 ### By Zone Type
 
