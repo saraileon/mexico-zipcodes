@@ -17,6 +17,11 @@ You can find and already hosted version of the api here: [http://mexico-zipcodes
 
 [http://mexico-zipcodes.herokuapp.com/zipcode/03100](http://mexico-zipcodes.herokuapp.com/zipcode/03100)
 
+## Table Of Contents
+
+- [Search Types](#search-types)
+- [By Zipcode](#by-zipcode)
+
 ## Search Types
 
 ### By Zipcode
