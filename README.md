@@ -1,7 +1,7 @@
 <!--
   Title: Mexico Zipcodes
-  Description: A curated list of amazingly awesome regex resources.
-  Author: aloisdg
+  Description: Mexico Zipcodes REST API / REST API Códigos Postales de México
+  Author: saraileon
   -->
 
 # Mexico Zipcodes
