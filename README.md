@@ -9,9 +9,9 @@ Mexico zipcodes micro service with NodeJS & MongoDB using HapiJS framework.
 
 Data taken from the Mexico postal service ([SEPOMEX](http://www.sepomex.gob.mx/lservicios/servicios/CodigoPostal_Exportar.aspx)).
 
-Data as of: April 2017
-Total documents: 144,826
-Unique zipcodes: 32,147
+#### Data as of: April 2017
+- Total documents: 144,826
+- Unique zipcodes: 32,147
 
 You can find and already hosted version of the api here: [http://mexico-zipcodes.herokuapp.com/](http://mexico-zipcodes.herokuapp.com/)
 
