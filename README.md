@@ -20,7 +20,13 @@ You can find and already hosted version of the api here: [http://mexico-zipcodes
 ## Table Of Contents
 
 - [Search Types](#search-types)
-- [By Zipcode](#by-zipcode)
+  - [By Zipcode](#by-zipcode)
+  - [By State](#by-state)
+  - [By Colony](#by-colony)
+  - [By Municipality](#by-municipality)
+  - [By Zone Type](#by-zone-type)
+- [Pagination](#pagination)
+- [Setup](#setup)
 
 ## Search Types
 
