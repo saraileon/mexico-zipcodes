@@ -7,7 +7,7 @@ var Municipality = require('./../controller/municipality');
 var State        = require('./../controller/state');
 var Colony       = require('./../controller/colony');
 var Zone         = require('./../controller/zone');
-var App           = require('./../controller/app');
+var App          = require('./../controller/app');
 
 // API Server Endpoints
 exports.endpoints = [
