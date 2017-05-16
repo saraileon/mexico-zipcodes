@@ -2,12 +2,12 @@
 
 let Boom     = require('boom'),
     Zipcode  = require('../model/zipcode').Zipcode,
+    Promise  = require('bluebird'),
     mongoose = require('mongoose');
 
 module.exports = class searchDB {
   search( searchType, searchCriteria, param, page, limit ) {
     return new Promise((resolve, reject) => {
-
       let data  = {};
       let total = 0;
       let query = {};
