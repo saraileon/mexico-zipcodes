@@ -3,6 +3,8 @@
   Description: Mexico Zipcodes REST API / REST API Códigos Postales de México
   Author: saraileon
   -->
+  
+[![Code Climate](https://codeclimate.com/github/saraileon/mexico-zipcodes.png)](https://codeclimate.com/github/saraileon/mexico-zipcodes)
 
 # Mexico Zipcodes
 Mexico zipcodes micro service with NodeJS & MongoDB using HapiJS framework.
