@@ -21,8 +21,8 @@ exports.getZoneType = {
     let total   = 0;
 
     if(typeof page !== 'undefined' && typeof limit !== 'undefined'){
-      page  = parseInt(page);
-      limit = parseInt(limit);
+      page  = parseInt(page, 10);
+      limit = parseInt(limit, 10);
 
       Zipcode.count({ 'zone_type': new RegExp(zone, 'i') }).exec()
       .catch((e) => {

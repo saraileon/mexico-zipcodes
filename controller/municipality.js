@@ -21,8 +21,8 @@ exports.getMunicipality = {
     let total   = 0;
 
     if(typeof page !== 'undefined' && typeof limit !== 'undefined'){
-      page  = parseInt(page);
-      limit = parseInt(limit);
+      page  = parseInt(page, 10);
+      limit = parseInt(limit, 10);
 
       Zipcode.count({ 'municipality': new RegExp(municipality, 'i') }).exec()
       .catch((e) => {
