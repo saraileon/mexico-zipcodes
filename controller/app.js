@@ -44,6 +44,6 @@ exports.getData = {
         break
       default:
         return res({ statusCode: 400, error: 'Bad Request', message: 'invalid query' });
-    };
+    }
   }
 };
