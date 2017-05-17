@@ -4,7 +4,8 @@
   Author: saraileon
   -->
   
-[![Code Climate](https://codeclimate.com/github/saraileon/mexico-zipcodes.png)](https://codeclimate.com/github/saraileon/mexico-zipcodes)
+[![Code Climate](https://codeclimate.com/github/saraileon/mexico-zipcodes/badges/gpa.svg)](https://codeclimate.com/github/saraileon/mexico-zipcodes)
+[![Issue Count](https://codeclimate.com/github/saraileon/mexico-zipcodes/badges/issue_count.svg)](https://codeclimate.com/github/saraileon/mexico-zipcodes)
 
 # Mexico Zipcodes
 Mexico zipcodes micro service with NodeJS & MongoDB using HapiJS framework.
