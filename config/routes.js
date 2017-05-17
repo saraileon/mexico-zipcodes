@@ -2,7 +2,7 @@
 
 // Load modules
 
-const App = require('./../controller/app');
+const App = require('./../controllers/app');
 
 // API Server Endpoints
 exports.endpoints = [
