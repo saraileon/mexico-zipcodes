@@ -1,9 +1,8 @@
 'use strict';
 
-let Boom     = require('boom'),
-    Zipcode  = require('../model/zipcode').Zipcode,
-    Promise  = require('bluebird'),
-    mongoose = require('mongoose');
+const Zipcode  = require('../model/zipcode').Zipcode,
+      Promise  = require('bluebird'),
+      mongoose = require('mongoose');
 
 module.exports = class searchDB {
   search( searchType, searchCriteria, param, page, limit ) {
@@ -24,7 +23,7 @@ module.exports = class searchDB {
 
         Zipcode.count(query).exec()
         .catch((e) => {
-          return reject(Boom.badImplementation(e));
+          return reject(e);
         })
         .then((count) => {
           total = count;
@@ -32,7 +31,7 @@ module.exports = class searchDB {
         .then(() => {
           Zipcode.find(query).skip(page-1).limit(limit).exec()
           .catch((e) => {
-            return reject(Boom.badImplementation(e));
+            return reject(e);
           })
           .then((rows) => {
             data.data  = rows;
@@ -47,12 +46,15 @@ module.exports = class searchDB {
         });
 
       }else{
-        Zipcode.find(query).exec(function(err,data){
-          if (err) { return reject(Boom.badImplementation(e)) }
+        Zipcode.find(query).exec()
+        .catch((e) => {
+          return reject(e);
+        })
+        .then((data) => {
           return resolve(data);
         });
       }
-    });
 
+    });
   }
 };

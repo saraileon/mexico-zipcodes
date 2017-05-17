@@ -1,7 +1,7 @@
 {
   "name": "mexico-zipcodes",
   "description": "México Zipcodes",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/saraileon/mexico-zipcodes.git"
@@ -12,7 +12,6 @@
   "main": "server.js",
   "dependencies": {
     "bluebird": "^3.5.0",
-    "boom": "^2.6.1",
     "chalk": "^1.1.3",
     "hapi": "^8.2.0",
     "mongoose": "^4.9.8",
