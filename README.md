@@ -3,7 +3,6 @@
   Description: Mexico Zipcodes REST API / REST API Códigos Postales de México
   Author: saraileon
   -->
-[![Source Code][badge-source]][source]
 [![Code Climate](https://codeclimate.com/github/saraileon/mexico-zipcodes/badges/gpa.svg)](https://codeclimate.com/github/saraileon/mexico-zipcodes)
 [![Issue Count](https://codeclimate.com/github/saraileon/mexico-zipcodes/badges/issue_count.svg)](https://codeclimate.com/github/saraileon/mexico-zipcodes)
 
