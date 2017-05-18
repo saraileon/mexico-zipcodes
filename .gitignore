@@ -10,10 +10,18 @@ lib-cov
 pids
 logs
 results
+# modules
+
 client/src/bower_components
 node_modules
+
 npm-debug.log
+
+# Jetbrains folder
 /.idea
-/config/config.js
+
 .DS_Store
 
+#config
+/config/config.js
+config
